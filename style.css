@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Playwrite+HU:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Playwrite+HU:wght@100..400&family=Zain:wght@200;300;400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&display=swap');
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body{
+    background-color: #06070f;
+}
+.login_main_place{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.login_box_place{
+    width: 350px;
+    background-color: rgba(255,255,255,0.13);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 40px 35px;
+    border-radius: 5px;
+    position: relative;
+    font-family: 'Poppins',sans-serif;
+    letter-spacing: 0.5px;
+}
+.header_login_place{
+    width: 100%;
+    color: white;
+    font-size: 26px;
+    text-align: center;
+}
+.input_place_all{
+    width: 100%;
+    margin-top: 30px;
+}
+.input_1{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+.zly_kod_place{
+    width: 100%;
+    margin-top: 25px;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    color: red;
+    display: block;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+.button_place_all{
+    width: 100%;
+    margin-top: 25px;
+}
+.but_1{
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.zaproszenie_place{
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+   
+}
+@keyframes hide{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
+@keyframes change_colour{
+    0%{
+        background-color: #06070f;
+    }
+    100%{
+        background-color: #ebebed;
+    }
+}
+.container {
+    opacity: 0;
+    width: 60%;
+    height: 60vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .valentines {
+    position: relative;
+    top: 50px;
+    cursor: pointer;
+  }
+  
+  .envelope {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #333234;
+    display: grid;
+    place-items: center;
+  }
+  
+  .envelope::before {
+    content: "";
+    position: absolute;
+    width: 212px;
+    height: 212px;
+    background-color: #333234;
+    transform: rotate(45deg);
+    top: -105px;
+    left: 44px;
+    border-radius: 30px 0 0 0;
+  }
+  
+  .front {
+    position: absolute;
+    border-right: 180px solid #313131;
+    border-top: 95px solid transparent;
+    border-bottom: 100px solid transparent;
+    left: 120px;
+    top: 5px;
+    width: 0;
+    height: 0;
+    z-index: 10;
+  }
+  
+  .front::before {
+    content: "";
+    position: absolute;
+    border-left: 300px solid #313131;
+    border-top: 195px solid transparent;
+    left: -120px;
+    top: -95px;
+  }
+  
+  .card {
+    position: relative;
+    width: 250px;
+    height: 180px;
+    background-color: white;
+    border-radius: 2px;
+    display: grid;
+    place-items: center;
+    transition: 1s;
+  }
+  
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border: 10px solid transparent; 
+    border-image: linear-gradient(to right, #d8a808, #f0e6a8, #d4af37, #b58c3a);
+    border-image-slice: 1;
+  }
+  
+  .valentines:hover .card {
+    transform: translateY(-100px);
+  }
+  
+  .card .text {
+    font-family: "Brush Script MT";
+    font-size: 28px;
+    text-align: center;
+    line-height: 25px;
+    color: #003049;
+    width: 90%;
+  }
+  .title_card{
+    font-size: 40px;
+    font-family: "Playwrite HU", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .normal_text_handle_place{
+    font-family: "Zain", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 26px;
+  }
+  .name_of_the_person{
+    font-family: "Zain", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 32px;
+  }
+  .author_place{
+    font-family: "Playwrite HR", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+  }
+
+  @keyframes bigger_card {
+    0% {
+      width: 250px;
+      height: 180px;
+    }
+    100% {
+      width: 400px;
+      height: 750px;
+    }
+  }
+  @keyframes show {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
